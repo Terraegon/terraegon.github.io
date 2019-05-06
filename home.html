@@ -22,7 +22,7 @@ body {
   border: 1px solid #ccc;
   background-color: lightgrey;
   width: 30%;
-  height: 500px;
+  height: 600px;
 }
 
 /* Style the buttons inside the tab */
@@ -53,11 +53,11 @@ body {
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 12px 12px;
+  padding: 10px 10px;
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  height: 500px;
+  height: 600px;
   background-color: white;
 }
     
@@ -67,9 +67,10 @@ body {
 <body background="https://wallpapercave.com/wp/wp2719330.jpg">
 
 
-  <center><h1>Terraegon - Home </h1></center>
+  <center><h1>Terraegon </h1></center>
   
 <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
   <button class="tablinks" onclick="openCity(event, 'Author')" id="defaultOpen">About the Author</button>
   <button class="tablinks" onclick="openCity(event, 'ProfileTracker')">Profile Tracker</button>
   <button class="tablinks" onclick="openCity(event, 'GuideBook')">Rules and Guidebook</button>
@@ -79,7 +80,12 @@ body {
 <button class="tablinks" onclick="openCity(event, 'ArchivedForums')">Archived Forums</button>
   </div>
 
-<div id="Author" class="tabcontent">
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>London is the capital city of England.</p>
+</div>
+  
+  <div id="Author" class="tabcontent">
   <h3>About the Author</h3>
   <p>London is the capital city of England.</p>
 </div>
